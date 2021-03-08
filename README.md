@@ -1,33 +1,11 @@
-# Eleventy-Garden
-A starter site for building a [mind garden](https://www.mentalnodes.com/a-gardening-guide-for-your-mind), using [11ty](https://github.com/11ty/eleventy) ([demo](https://eleventy-garden.netlify.app/))
+# MaSVF Wiki on Eleventy Garden
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4ce845a6-b009-4fcf-9ad4-a560d01a0073/deploy-status)](https://app.netlify.com/sites/eleventy-garden/deploys)
+See [MaSVF Wiki](https://github.com/peterkaminski/masvf-wiki) and [Eleventy Garden](https://github.com/binyamin/eleventy-garden) for background.
 
-> Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
-## :house: About
-- Double-bracket links (the ones roam uses)
-- Displays backlinks
-- hovercards for backlinks
-- _searchbar (not yet, see [#11](https://github.com/binyamin/eleventy-garden/issues/11))_
+Let's see how they might work together!
 
-### Related
-- [maximevaillancourt/digital-garden-jekyll-template](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
-- [mathieudutour/gatsby-digital-garden](https://github.com/mathieudutour/gatsby-digital-garden/)
-- Find more at [maggieappleton/digital-gardeners](https://github.com/maggieappleton/digital-gardeners)
-## :rocket: Usage
-If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/binyamin/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
+Three ideas:
 
-## :heart: Contribute
-Feel free to dive in!
-
-Here's what this project needs...
-- Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
-- Stars on GitHub
-- Contributors - check out the [contributing guide](https://github.com/binyamin/eleventy-garden/blob/master/CONTRIBUTING.md)
-
-### Maintainers
-[@binyamin](https://github.com/binyamin)
-
-## :scroll: License
-This project is under the [MIT](https://github.com/binyamin/eleventy-garden/blob/master/LICENSE) license.
-Please adhere to the [code of conduct](https://github.com/binyamin/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md).
+* Include the wiki into an Eleventy Garden `notes` directory as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). How easy it will be to do automated deployments with a submodule?
+* Have a script (Python or other) that copies the wiki into an Eleventy Garden `notes` directory. A little clunky, but I think that would work well in automated deployments.
+* Include the whole eleventy-garden superstructure in the wiki repo. Yuck, that would be a pain for other people not using Eleventy Garden and would distract from the intended interoperability for which MaSVF Wiki is chartered.
